@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Analysis</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/png, image/jpeg">
+    <canvas id="imageCanvas" style="display:none;"></canvas>
+    <div class="result">
+        <p id="totalPixels">Total Pixels: </p>
+        <p id="alphaPixels">Alpha Pixels: </p>
+        <p id="colorPixels">Color Pixels: </p>
+    </div>
+    <div id="colorResults"></div>
+
+    <!-- Подключение Color Thief -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
