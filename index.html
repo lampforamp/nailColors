@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Analysis</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="app">
         <main>
-            <section id="top"></section>
-            <section id="content"></section>
-            <section id="sourcePalette"></section>
-            <section id="materials"></section>
+            <div class="section-group grpop-1">
+                <section id="top"></section>
+                <section id="content"></section>
+                <section id="sourcePalette"></section>
+            </div>
+            <div class="section-group group-2">
+                <section id="materials"></section>
+            </div>
         </main>
     </div>
     <input type="file" id="imageInput" accept="image/png, image/jpeg">
@@ -28,4 +34,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
