@@ -6,34 +6,46 @@ body {
 
 main {
     height: 100vh;
-    max-width: 40rem;
+    max-width: 30rem;
     background-color: rgb(176, 176, 176);
     display: flex;
     flex-direction: column;
 
 }
 
+.section-group {
+    display:flex;
+    flex-direction: column;
+}
+
 .group-1 {
-    height: 20rem;
-    padding: 1rem;
-    border-bottom: 2px grey solid;
+    height: 38rem;
+    border-bottom: 1px grey solid;
 }
 
 .group-2 {
     height: 100%;
-    padding: 1rem;
 }
 
 section {
-    height: 2rem;
+    height: 6rem;
     background-color: rgb(198, 79, 79);
-    padding: 5rem;
-    border: 2px solid black;
+    padding: 1rem;
+    background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     
 }
 
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+
 #content {
-    
+    height:100%;
+}
+#materials {
+    height: 100%;
 }
 
 
