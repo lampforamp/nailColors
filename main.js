@@ -17,6 +17,7 @@ document.getElementById('imageInput').addEventListener('change', function(event)
         img.src = e.target.result;
     }
     reader.readAsDataURL(file);
+    document.querySelector('.style-photo').style.backroundImage = 'none';
 });
 
 function analyzePixels(ctx, width, height) {
