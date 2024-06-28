@@ -59,6 +59,12 @@ section {
     background-color: rgb(255, 178, 84);
 }
 
+#colorResults {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 #materials {
     height: 100%;
 }
@@ -76,7 +82,7 @@ section {
     height: 50px;
     display: inline-block;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 0.7rem;
 }
 .color-label {
     text-align: center;

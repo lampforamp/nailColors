@@ -51,13 +51,13 @@ function extractColors(img) {
         colorBox.className = 'color-box';
         colorBox.style.backgroundColor = hexColor;
 
-        const colorLabel = document.createElement('div');
-        colorLabel.className = 'color-label';
-        colorLabel.textContent = hexColor;
+        // // const colorLabel = document.createElement('div');
+        // colorLabel.className = 'color-label';
+        // // colorLabel.textContent = hexColor;
 
         const colorContainer = document.createElement('div');
         colorContainer.appendChild(colorBox);
-        colorContainer.appendChild(colorLabel);
+        // colorContainer.appendChild(colorLabel);
 
         colorResults.appendChild(colorContainer);
     });
