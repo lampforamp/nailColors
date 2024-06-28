@@ -30,7 +30,6 @@ main {
 section {
     height: 6rem;
     background-color: rgb(198, 79, 79);
-    padding: 1rem;
     background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
     
@@ -43,7 +42,23 @@ section {
 
 #content {
     height:100%;
+    display: flex;
 }
+
+.style-photo {
+    width: 50%;
+    background-color: bisque;
+    background-image: url(./images/IMG_0910.PNG) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.nails-photo {
+    width: 50%;
+    background-color: rgb(255, 178, 84);
+}
+
 #materials {
     height: 100%;
 }

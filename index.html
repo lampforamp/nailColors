@@ -14,9 +14,16 @@
             <div class="section-group group-1">
                 <section id="top">
                     <div class="logo">Fs №345</div>
-                    <div class="panel">+</div>
+                    <div class="panel">
+                        <button onclick="imageInput.click()">+</button>
+                        <input type="file" id="imageInput" accept="image/png, image/jpeg" style="display: none;">
+
+                    </div>
                 </section>
-                <section id="content"></section>
+                <section id="content">
+                    <div class="style-photo"></div>
+                    <div class="nails-photo"></div>
+                </section>
                 <section id="sourcePalette"></section>
             </div>
             <div class="section-group group-2">
@@ -24,7 +31,6 @@
             </div>
         </main>
     </div>
-    <input type="file" id="imageInput" accept="image/png, image/jpeg">
     <canvas id="imageCanvas" style="display:none;"></canvas>
     <div class="result">
         <p id="totalPixels">Total Pixels: </p>
