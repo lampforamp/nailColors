@@ -10,49 +10,46 @@ main {
     background-color: rgb(176, 176, 176);
     display: flex;
     flex-direction: column;
-
 }
 
 .section-group {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 .group-1 {
     height: 38rem;
     border-bottom: 1px grey solid;
+    display: flex;
+    flex-direction: column;
 }
 
 .group-2 {
-    height: 100%;
+    flex: 1;
 }
 
 section {
     height: 6rem;
     background-color: rgb(198, 79, 79);
-    background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    
+    background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%);
 }
 
-#top{
+#top {
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0; /* Предотвращает сжатие */
 }
 
 #content {
-    height:100%;
+    flex: 1;
     display: flex;
 }
 
 .style-photo {
     width: 50%;
     background-color: bisque;
-    background-image: url(./images/IMG_0910.PNG) ;
-    background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .nails-photo {
@@ -66,22 +63,23 @@ section {
     align-items: center;
     height: 100%;
 }
+
 #materials {
     height: 100%;
 }
 
-
 #imageCanvas {
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
-    position: absolute;
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
-
-
 
 .result {
     margin-top: 20px;
 }
+
 .color-box {
     width: 50px;
     height: 50px;
@@ -89,6 +87,7 @@ section {
     margin: 5px;
     border-radius: 0.7rem;
 }
+
 .color-label {
     text-align: center;
     margin-top: -10px;

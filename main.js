@@ -8,9 +8,24 @@ document.getElementById('imageInput').addEventListener('change', function(event)
         img.onload = function() {
             const canvas = document.getElementById('imageCanvas');
             const ctx = canvas.getContext('2d');
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0);
+            const maxCanvasWidth = document.querySelector('.style-photo').clientWidth;
+            const maxCanvasHeight = document.querySelector('.style-photo').clientHeight;
+            let canvasWidth = img.width;
+            let canvasHeight = img.height;
+
+            // Рассчитываем новые размеры с сохранением пропорций
+            if (canvasWidth > maxCanvasWidth || canvasHeight > maxCanvasHeight) {
+                const widthRatio = maxCanvasWidth / canvasWidth;
+                const heightRatio = maxCanvasHeight / canvasHeight;
+                const ratio = Math.min(widthRatio, heightRatio);
+
+                canvasWidth = canvasWidth * ratio;
+                canvasHeight = canvasHeight * ratio;
+            }
+
+            canvas.width = canvasWidth;
+            canvas.height = canvasHeight;
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
             analyzePixels(ctx, img.width, img.height);
             extractColors(img);
         }
