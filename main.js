@@ -28,12 +28,15 @@ document.getElementById('imageInput').addEventListener('change', function(event)
             ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
             analyzePixels(ctx, img.width, img.height);
             extractColors(img);
+
+            // Удаляем фоновое изображение после загрузки нового
+            document.querySelector('.style-photo').style.backgroundImage = 'none';
         }
         img.src = e.target.result;
     }
     reader.readAsDataURL(file);
-    document.querySelector('.style-photo').style.backgroundImage = 'none';
 });
+
 
 function analyzePixels(ctx, width, height) {
     const imageData = ctx.getImageData(0, 0, width, height).data;
