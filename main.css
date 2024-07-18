@@ -60,16 +60,22 @@ section {
 .nails-photo {
     width: 50%;
     background-color: rgb(255, 178, 84);
+    position: relative;
+}
+
+.nails-photo img {
+    width: 100%;
+    position: absolute;
 }
 
 #colorResults {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 100%;
+    padding: 1.1rem 1.5rem;
 }
 
 #materials {
+    display: flex;
     height: 100%;
 }
 
@@ -87,9 +93,9 @@ section {
 
 .color-box {
     width: 60px;
+    margin: 0.8rem;
     height: 60px;
     display: inline-block;
-    margin: 5px;
     border-radius: 0.7rem;
 }
 

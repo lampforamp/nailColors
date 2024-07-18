@@ -57,14 +57,12 @@ function rgbObjToHex(rgbObj) {
 function findClosestColors(targetColors, availableColors, tolerance) {
     return targetColors.map(targetColor => {
         const closestColor = findClosestColor(targetColor, availableColors);
-        // console.log(closestColor)
         if (closestColor) {
-            // const paletteObj = {
-            //     r:targetColors[0], g:targetColors[1], b:targetColors[2],
-            // }
-            return closestColor
-            const distance = colorDistance(hexToRgb(targetColors), hexToRgb(closestColor.code));
-            console.log(distance)
+            const paletteObj = {
+                r: targetColor[0], g: targetColor[1], b: targetColor[2]
+            };
+            const distance = colorDistance(paletteObj, hexToRgb(closestColor.code));
+            console.log(distance);
             return distance <= tolerance ? closestColor : null;
         }
         return null;
