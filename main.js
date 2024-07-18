@@ -29,7 +29,7 @@ document.getElementById('imageInput').addEventListener('change', function (event
             const palette = extractColors(img)
             
             renderPalette(palette)
-            const result = findClosestColors(palette, colors, 60)
+            const result = findClosestColors(palette, colors, 50)
             console.log(result)
             renderClosestColors(result)
 

@@ -7,7 +7,7 @@ body {
 main {
     height: 100vh;
     max-width: 30rem;
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +19,7 @@ main {
 
 .group-1 {
     height: 38rem;
-    border-bottom: 1px grey solid;
+    /* border-bottom: 1px grey solid; */
     display: flex;
     flex-direction: column;
 }
@@ -30,8 +30,8 @@ main {
 
 section {
     height: 6rem;
-    background-color: rgb(198, 79, 79);
-    background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%);
+    background-color: rgb(255, 255, 255);
+    /* background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%); */
 }
 
 #top {
@@ -47,7 +47,7 @@ section {
 
 .style-photo {
     width: 50%;
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     background-image: url(./images/launch_1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -70,13 +70,13 @@ section {
 
 #colorResults {
     display: flex;
-    height: 100%;
     padding: 1.1rem 1.5rem;
 }
 
 #materials {
     display: flex;
     height: 100%;
+    padding: 1.1rem 1.5rem;
 }
 
 #imageCanvas {
@@ -93,7 +93,7 @@ section {
 
 .color-box {
     width: 60px;
-    margin: 0.8rem;
+    margin: 0rem 0.8rem;
     height: 60px;
     display: inline-block;
     border-radius: 0.7rem;
@@ -103,4 +103,11 @@ section {
     text-align: center;
     margin-top: -10px;
     margin-bottom: 20px;
+}
+
+.divider {
+    width: 25rem;
+    margin: auto;
+    height: 1.6px;
+    background-color: rgb(189, 189, 189);
 }
