@@ -62,10 +62,14 @@ function findClosestColors(targetColors, availableColors, tolerance) {
                 r: targetColor[0], g: targetColor[1], b: targetColor[2]
             };
             const distance = colorDistance(paletteObj, hexToRgb(closestColor.code));
-            console.log(distance);
+            // console.log(distance);
             return distance <= tolerance ? closestColor : null;
         }
         return null;
     }).filter(color => color !== null);
 }
 
+function changeHand(number){
+    const handElement = document.querySelector("#handImage")
+    handElement.src = `./images/nailOverlays/${number}.jpg`
+}

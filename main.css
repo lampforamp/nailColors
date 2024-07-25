@@ -59,8 +59,10 @@ section {
 
 .nails-photo {
     width: 50%;
-    background-color: rgb(255, 178, 84);
+    background-color: rgb(255, 255, 255);
     position: relative;
+    display: flex;
+    align-items: end;
 }
 
 .nails-photo img {
@@ -110,4 +112,12 @@ section {
     margin: auto;
     height: 1.6px;
     background-color: rgb(189, 189, 189);
+}
+
+#materials .color-box {
+    cursor: pointer;
+}
+
+#materials .color-box:hover {
+    transform: scale(1.1);
 }
