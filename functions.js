@@ -69,7 +69,10 @@ function findClosestColors(targetColors, availableColors, tolerance) {
     }).filter(color => color !== null);
 }
 
-function changeHand(number){
+function changeHand(number, colorElement){
     const handElement = document.querySelector("#handImage")
     handElement.src = `./images/nailOverlays/${number}.jpg`
+    const logoElement = document.querySelector(".logo")
+    logoElement.innerHTML = colorElement.innerHTML
+    logoElement.style.backgroundColor = colorElement.style.backgroundColor
 }

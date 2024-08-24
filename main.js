@@ -64,7 +64,10 @@ function renderClosestColors(palette) {
     colorResults.innerHTML = palette.map(color => {
         // const hexColor = rgbToHex(color[0], color[1], color[2]);
         return `
-            <div class="color-box" onclick="changeHand('${color.number}')" style="background-color: ${color.code};"></div>
+            <div class="color-box" onclick="changeHand('${color.number}', this)" style="background-color: ${color.code};">
+                <div>Fs</div>
+                <div>${color.number}</div>
+            </div>
         `;
     }).join('');
 }

@@ -36,8 +36,10 @@ section {
 
 #top {
     display: flex;
+    height: fit-content;
     justify-content: space-between;
     flex-shrink: 0; /* Предотвращает сжатие */
+    padding: 1.1rem 1.5rem;
 }
 
 #content {
@@ -99,8 +101,22 @@ section {
     height: 60px;
     display: inline-block;
     border-radius: 0.7rem;
+    color: azure;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
 }
 
+.color-box div:nth-child(1){
+    font-size: 1rem;
+}
+
+.color-box div:nth-child(2){
+    font-size: 1.5rem;
+}
 .color-label {
     text-align: center;
     margin-top: -10px;
